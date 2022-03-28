@@ -941,7 +941,7 @@ Value of &quot;School&quot;: 0x400749
 </div>
 
 
-      </article>
+ </article>
 
       <div class="copyright">Copyright © 2022 ALX, All rights reserved.</div>
     </main>
@@ -951,7 +951,7 @@ Value of &quot;School&quot;: 0x400749
   <i aria-hidden="true" class="fa fa-window-minimize "></i>
 </button>
 
-      <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal-label">
+ <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal-label">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
@@ -962,7 +962,7 @@ Value of &quot;School&quot;: 0x400749
             placeholder="✨Start search by typing in this field✨">
 </div>
 
-            </div>
+ </div>
             <div class="modal-body">
                 <div id="modal-spinner" class="spinner gap">
                     <div class="bounce1"></div>
@@ -972,14 +972,12 @@ Value of &quot;School&quot;: 0x400749
                 <div id="search-results-container">
 </div>
 
-            </div>
-        </div>
-    </div>
+   
 </div>
 
 
 
-      <div class="modal fade" id="markdownGuideModal" tabindex="-1" role="dialog" aria-labelledby="markdownGuideModalLabel" aria-hidden="true">
+<div class="modal fade" id="markdownGuideModal" tabindex="-1" role="dialog" aria-labelledby="markdownGuideModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
         <div class="modal-header">
