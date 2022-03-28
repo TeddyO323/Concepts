@@ -943,13 +943,7 @@ Value of &quot;School&quot;: 0x400749
 
  </article>
 
-<div class="copyright">Copyright © 2022 ALX, All rights reserved.</div>
-    </main>
 
- <button class="btn btn-primary" id="search-button" data-search-active="false" data-toggle="modal" data-target="#search-modal">
-  <i aria-hidden="true" class="fa fa-search "></i>
-  <i aria-hidden="true" class="fa fa-window-minimize "></i>
-</button>
 
  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal-label">
     <div class="modal-dialog modal-md">
