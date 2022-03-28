@@ -934,7 +934,7 @@ Value of &quot;School&quot;: 0x400749
 <p>Our memory templates:</p>
 
 <ul>
-<li><a href="/rltoken/0A41AUjhFj2TMIT5S_Q74Q" title="Memory template.xlsx" target="_blank">Memory template.xlsx</a></li>
+<li><a href="alx_Projects/Memory_Template/5b15142e4c3fb2a321fecb8da3f604348c451cd4.xlsx" title="Memory template.xlsx" target="_blank">Memory template.xlsx</a></li>
 <li><a href="/rltoken/p1XS_Ei3qH-z3wbn_RUkHA" title="Memory template.ods" target="_blank">Memory template.ods</a></li>
 </ul>
 
