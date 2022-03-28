@@ -64,7 +64,7 @@ Size of type of my variable n on my computer: 4 bytes
 <pre><code>char c;  
 </code></pre>
 
-<p><img src="/images/contents/low_level_programming/projects/char_c_declaration.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/char_c_declaration.png?raw=true" alt="" style="" />  </p>
 
 <p>In this example, we simply declare a variable <code>c</code> of type <code>char</code>. The address of <code>c</code> is <code>8</code>. At this stage, you have not assigned a value to your variable <code>c</code>. So you do not know its value. It depends on what this memory address was used for before. You should never assumed that it is 0.  </p>
 
@@ -75,11 +75,11 @@ c = &#39;H&#39;;
 
 <p>When we assign the value <code>&#39;H&#39;</code> to <code>c</code>, then <code>&#39;H&#39;</code> is stored at <code>c</code>&lsquo;s address.  </p>
 
-<p><img src="/images/contents/low_level_programming/projects/char_c_H.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/char_c_H.png?raw=true" alt="" style="" />  </p>
 
 <p>But you know that a byte can only store numbers. So actually, the byte will not hold exactly the letter <code>&#39;H&#39;</code>, but its ascii code, which is <code>72</code> (man ascii). So it really looks like this in memory:  </p>
 
-<p><img src="/images/contents/low_level_programming/projects/char_c_72.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/char_c_72.png?raw=true" alt="" style="" />  </p>
 
 <p>Since integers are stored within four bytes of memory, the same example with an <code>int</code> variable would look like this:  </p>
 
@@ -88,7 +88,7 @@ c = &#39;H&#39;;
 n = 98;  
 </code></pre>
 
-<p><img src="/images/contents/low_level_programming/projects/int_n_98.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/int_n_98.png?raw=true" alt="" style="" />  </p>
 
 <p>In this example, the address of the variable <code>n</code> is the smallest address of its bytes, so in this example, <code>26</code>.<br>
 Note that you do not control the address where the variable is stored. In order to know what is the address of a variable, you can use the &ldquo;address-of unary operator&rdquo; <code>&amp;</code>.  </p>
@@ -164,7 +164,7 @@ ubuntu@ip-172-31-63-244:~/julien$ gcc -Wall -Werror -pedantic -Wextra -std=gnu89
 Size of pointer: 8
 </code></pre>
 
-<p><img src="/images/contents/low_level_programming/projects/p.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/p.png?raw=true" alt="" style="" />  </p>
 
 <p>To get the address where a pointer is stored, you can use the same technique as for any other variable: use the <code>&amp;</code> operator. </p>
 
@@ -198,7 +198,7 @@ p = &amp;n;
 
 <p>Because <code>&amp;n</code> gives us the address of the variable <code>n</code>, the variable <code>p</code> now holds the address of the variable <code>n</code>: <code>p</code> points to <code>n</code>. If the variable <code>n</code>&rsquo;s address were 26, then the value of our pointer <code>p</code> would be 26.  </p>
 
-<p><img src="/images/contents/low_level_programming/projects/p_n.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/p_n.png?raw=true" alt="" style="" />  </p>
 
 <pre><code>ubuntu@ip-172-31-63-244:~/julien$ cat 4-main.c
 #include &lt;stdio.h&gt;
@@ -274,7 +274,7 @@ Value of &#39;n&#39;: 402
 
 <p>At this point, the memory looks like this:  </p>
 
-<p><img src="/images/contents/low_level_programming/projects/p_n.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/p_n.png?raw=true" alt="" style="" />  </p>
 
 <ul>
 <li><code>*p = 402;</code>: equivalent to <code>n</code> = <code>402</code>, since <code>p</code> == <code>&amp;n</code>. Now <code>*p</code> == <code>402</code> so <code>n</code> == <code>402</code>. </li>
@@ -282,7 +282,7 @@ Value of &#39;n&#39;: 402
 
 <p>This is what it looks like after this statement in memory:  </p>
 
-<p><img src="/images/contents/low_level_programming/projects/p_n_402.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/p_n_402.png?raw=true" alt="" style="" />  </p>
 
 <p>This works exactly the same for other types:</p>
 
@@ -372,15 +372,15 @@ int main(void)
 
 <p>In this example, when we call the <code>modif_my_param</code> function, the value of n (98) is copied inside a new variable m, only available in the <code>modif_my_param</code> function. Here is what it looks like in memory before the line <code>m = 402;</code> is executed:  </p>
 
-<p><img src="/images/contents/low_level_programming/projects/n_m.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/n_m.png?raw=true" alt="" style="" />  </p>
 
 <p>After <code>m = 402;</code> the memory looks like this:  </p>
 
-<p><img src="/images/contents/low_level_programming/projects/nm402.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/nm402.png?raw=true" alt="" style="" />  </p>
 
 <p>When we leave the function <code>modif_my_param</code> the variable <code>m</code> is destroyed and does not exist anymore. Its value though, stays in memory until this space is used by the program for another variable or something else.  </p>
 
-<p><img src="/images/contents/low_level_programming/projects/nomorem.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/nomorem.png?raw=true" alt="" style="" />  </p>
 
 <p>This rule applies to any type of variable.
 But since the values of pointers are addresses, it is possible to modify a variable from outside the function it is declared, using a pointer.  </p>
@@ -434,19 +434,19 @@ Value of &#39;n&#39; after the call: 402
 
 <p>In this example, here is what happens: Before the call to the function <code>modif_my_param</code>, the memory looks like this: </p>
 
-<p><img src="/images/contents/low_level_programming/projects/before_call.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/before_call.png?raw=true" alt="" style="" />  </p>
 
 <p>When we call the function <code>modif_my_param</code>, the value of <code>p</code> is stored in a new variable called <code>m</code>:  </p>
 
-<p><img src="/images/contents/low_level_programming/projects/call.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/call.png?raw=true" alt="" style="" />  </p>
 
 <p>Since <code>m</code> stores the same memory address, it points to the same address, and so both <code>p</code> and <code>m</code> now point to <code>n</code>. Therefore, when we execute the line <code>*m = 402;</code> we modify the value of <code>n</code> and <code>n</code> now holds <code>402</code>.  </p>
 
-<p><img src="/images/contents/low_level_programming/projects/n402.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/n402.png?raw=true" alt="" style="" />  </p>
 
 <p>When we leave the function <code>modif_my_param</code>, the variable <code>m</code> is destroyed, but <code>n</code>&rsquo;s value is still <code>402</code>:</p>
 
-<p><img src="/images/contents/low_level_programming/projects/exitfunction.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/exitfunction.png?raw=true" alt="" style="" />  </p>
 
 <p>Using the same format, try to represent in memory what is happening at every step of the following program. When done, add some <code>printf</code>s and compile to verify your hypothesis.  </p>
 
@@ -487,7 +487,7 @@ int main(void)
 
 <p>In this example we declare an array of 5 integers. The computer will reserve a continuous space for 5 integers in memory. In memory, it would look like something like this.</p>
 
-<p><img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/f39bb24c846b2d92767d7c46531cea7dc3fb11d2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220328%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220328T071640Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=63e3563f566212907f10806df7ac685a9310b97783a0b79ad8bc46172ddbc5c5" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/f39bb24c846b2d92767d7c46531cea7dc3fb11d2.png?raw=true" alt="" style="" />  </p>
 
 <p>We access the different elements of an array this way: <code>t[0]</code> will access the first element, <code>t[1]</code> the second element, and so on.  </p>
 
@@ -535,7 +535,7 @@ Address of &#39;a[4]&#39;: 0x7ffcbca77de0
 
 <p>Memory would look like this before exiting the <code>main</code> function:  </p>
 
-<p><img src="/images/contents/low_level_programming/projects/endmain.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/endmain.png?raw=true" alt="" style="" />  </p>
 
 <h3>Pointers vs Arrays</h3>
 
@@ -576,7 +576,7 @@ julien@ubuntu:~/c$
 
 <p>But, you can still use the name of the array in your code, and its value will be&hellip; the address of the first element of the array. Wait&hellip; WAT?</p>
 
-<p><img src="/images/contents/low_level_programming/projects/wat.gif" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/wat.gif?raw=true" alt="" style="" />  </p>
 
 <pre><code>ubuntu@ip-172-31-63-244:~/julien$ cat 16-main.c
 #include &lt;stdio.h&gt;
@@ -784,7 +784,7 @@ Address of &#39;a[1]&#39;: 0x7ffff8f19244
 <p>But wait a second, if the value of <code>a</code> is <code>0x7ffff8f19240</code>, how come <code>a + 1</code> == <code>0x7ffff8f19244</code> and not <code>0x7ffff8f19241</code>?<br>
 This is the pointers arithmetic. The computer knows   that <code>a</code> points to an integer. The computer also knows that the size of an integer in memory is <code>sizeof(int)</code> bytes - in this case 4 bytes - and concludes that the next element of this type will be stored 4 bytes later in memory.  </p>
 
-<p><img src="/images/contents/low_level_programming/projects/arithm.png" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/arithm.png?raw=true" alt="" style="" />  </p>
 
 <p>If this works for arrays, which are evaluated as pointers in this context, this means that this arithmetic also works for &ldquo;regular&rdquo; pointers.</p>
 
@@ -883,7 +883,7 @@ ubuntu@ip-172-31-63-244:~/julien$
 
 <p>In this example, memory looks like this before exiting the program:  </p>
 
-<p><img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/28d0f00e7e5012ead35e6bb6cf553baa930606d7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220328%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220328T071640Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9960ae80eb2981959adc98b766ebbd96e3ec6553307ce038412aa19d92177444" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/28d0f00e7e5012ead35e6bb6cf553baa930606d7.png?raw=true" alt="" style="" />  </p>
 
 <p>That would be one way to store strings, but this is not very efficient. If we wanted to store a very long text, imagine how much time would we spend storing each character of the string in our array!<br>
 Fortunately, we can also use text in double quotes <code>&quot;</code>.  </p>
@@ -921,13 +921,13 @@ Value of &quot;School&quot;: 0x400749
 
 <p>Memory would look like:  </p>
 
-<p><img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/218e1ae8f2fc302e83007106fb8ef72287705b8d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220328%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220328T071640Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=2b9dd37516bab221abdc71d92fb914fdc279bad69a21eb7ea93b540ce8d5e4b5" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/218e1ae8f2fc302e83007106fb8ef72287705b8d.png?raw=true" alt="" style="" />  </p>
 
 <p>Since every string in C ends with a <code>&#39;\0&#39;</code> we do not need to know their size to use them. By knowing the address of the first character of strings (with a pointer to a char), C functions can easily print them using a loop, one character at a time, until they hit the character <code>&#39;\0&#39;</code>.  </p>
 
 <p><strong>#cisfun #pointersarefun #everythingisawesome</strong></p>
 
-<p><img src="/images/contents/low_level_programming/projects/blown-mind-explosion-gif.gif" alt="" style="" />  </p>
+<p><img src="https://github.com/TeddyO323/photos/blob/main/blown-mind-explosion-gif.gif?raw=true" alt="" style="" />  </p>
 
 <p><strong><em>BONUS</em></strong></p>
 
