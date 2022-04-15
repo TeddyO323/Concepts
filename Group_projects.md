@@ -1,4 +1,4 @@
-<span>Group Projects</span>
+# Group Projects
 </h1>
 
 <div>
@@ -6,7 +6,7 @@
 </div>
 
 <div class="gap formatted-content">
-    <p><img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/7/ab0138760e80bc0ac3d1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220415%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220415T173132Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=b361c7966205f0ca17e8f10c8a15b85e11185c070984160c223dac19953d92f3" alt="" style="" /></p>
+    <p><img src="https://github.com/TeddyO323/photos/blob/main/ab0138760e80bc0ac3d1.jpg?raw=true" alt="" style="" /></p>
 
 <h2>Teamwork Makes the Dream Work</h2>
 
